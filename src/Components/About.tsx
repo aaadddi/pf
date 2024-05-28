@@ -1,21 +1,27 @@
+import SkillSection from "./SkillSection"
+
 function About() {
+  // bg-gradient-to-r from-purple-100 to-white
   return (
-    <div className="h-1/2 pl-5 pr-5 flex">
-        <div className="left flex-1">
+    <div>
+
+    <div className="py-10 px-5 lg:bg-gradient-r lg:from-gray-50 lg:to-white  shadow-sm rounded-3xl lg:flex lg:flex-row lg:border ">
+      <div className="text-center p-4 bg-purple-20 bg-opacity-60 lg:relative flex-1 flex flex-col justify-center">
         <br />
         <br />
-        <h2 className="text-s">Hi! mate, My name is</h2>
-        <h1 className="text-2xl text-bold">Aditya Kashyap</h1>
-        <h1 className="text-3xl ml-2 pt-2 font-serif text-purple-600 antialiased">Software Engineer</h1>
-        <h1 className="text-3xl "><i>transforming a idea to reality</i></h1>
+        <h1 className="text-2xl ">Hey👋, I am</h1>
+        <h1 className="text-5xl font-serif text-purple-300 antialiased">Aditya Kashyap</h1>
+        <h1 className="text-3xl font-serif text-purple-300 antialiased"><i>Full Stack Developer</i></h1>
+        <h1 className="text-3xl ">Design | Develop | Deploy</h1>
+
         <br />
 
-        <button className="text-2xl border rounded-lg pl-10 pr-10 pt-2 pb-2 bg-purple-600 text-white">
-            Collaborate 
-            </button>
-        </div> 
-        <div className="right border"><script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.28/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/W5eWtycU7e7gy65g/scene.splinecode"></spline-viewer></div>
+        <button className="text-2xl rounded-lg pl-10 pr-10 pt-2 pb-2 mx-auto border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white max-w-80">
+          Let's connect
+        </button>
+      </div>
+    </div>
+    <SkillSection/>
     </div>
   )
 }
